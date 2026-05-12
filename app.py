@@ -23,50 +23,57 @@ st.markdown("""
     }
 
     .stApp {
-        background: #0d1117;
-        color: #e6edf3;
+        background: #f5f7fa;
+        color: #1a1a2e;
     }
 
     /* Sidebar */
     [data-testid="stSidebar"] {
-        background: #161b22;
-        border-right: 1px solid #30363d;
+        background: #ffffff;
+        border-right: 1px solid #e0e4ea;
     }
     [data-testid="stSidebar"] .stMarkdown h2 {
-        color: #58a6ff;
+        color: #1a6fbf;
+    }
+    [data-testid="stSidebar"] p,
+    [data-testid="stSidebar"] li,
+    [data-testid="stSidebar"] span,
+    [data-testid="stSidebar"] div {
+        color: #374151 !important;
     }
 
     /* Metric cards */
     [data-testid="metric-container"] {
-        background: #161b22;
-        border: 1px solid #30363d;
+        background: #ffffff;
+        border: 1px solid #e0e4ea;
         border-radius: 12px;
         padding: 16px;
         transition: border-color 0.2s;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.06);
     }
     [data-testid="metric-container"]:hover {
-        border-color: #58a6ff;
+        border-color: #1a6fbf;
     }
     [data-testid="stMetricLabel"] {
-        color: #8b949e !important;
+        color: #6b7280 !important;
         font-size: 0.8rem !important;
         font-weight: 600 !important;
         letter-spacing: 0.05em !important;
         text-transform: uppercase;
     }
     [data-testid="stMetricValue"] {
-        color: #e6edf3 !important;
+        color: #1e3a5f !important;
         font-family: 'Space Mono', monospace !important;
         font-size: 1.8rem !important;
     }
     [data-testid="stMetricDelta"] svg {
-        color: #3fb950 !important;
+        color: #16a34a !important;
     }
 
     /* Header */
     .hero-header {
-        background: linear-gradient(135deg, #0d2137 0%, #1a2d4a 50%, #0d2137 100%);
-        border: 1px solid #30363d;
+        background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 50%, #dbeafe 100%);
+        border: 1px solid #bfdbfe;
         border-radius: 16px;
         padding: 32px 40px;
         margin-bottom: 24px;
@@ -80,26 +87,26 @@ st.markdown("""
         right: -10%;
         width: 400px;
         height: 400px;
-        background: radial-gradient(circle, rgba(88,166,255,0.08) 0%, transparent 70%);
+        background: radial-gradient(circle, rgba(26,111,191,0.08) 0%, transparent 70%);
         border-radius: 50%;
     }
     .hero-title {
         font-size: 2rem;
         font-weight: 800;
-        color: #e6edf3;
+        color: #1e3a5f;
         margin: 0 0 6px 0;
         letter-spacing: -0.02em;
     }
     .hero-subtitle {
-        color: #8b949e;
+        color: #4b6280;
         font-size: 0.95rem;
         margin: 0;
     }
     .hero-badge {
         display: inline-block;
-        background: rgba(88,166,255,0.15);
-        border: 1px solid rgba(88,166,255,0.3);
-        color: #58a6ff;
+        background: rgba(26,111,191,0.10);
+        border: 1px solid rgba(26,111,191,0.3);
+        color: #1a6fbf;
         padding: 4px 12px;
         border-radius: 20px;
         font-size: 0.75rem;
@@ -112,20 +119,21 @@ st.markdown("""
     .section-title {
         font-size: 1.1rem;
         font-weight: 700;
-        color: #e6edf3;
+        color: #1e3a5f;
         margin: 0 0 16px 0;
         padding-bottom: 8px;
-        border-bottom: 2px solid #21262d;
+        border-bottom: 2px solid #e0e4ea;
         letter-spacing: -0.01em;
     }
 
     /* Card wrapper */
     .card {
-        background: #161b22;
-        border: 1px solid #30363d;
+        background: #ffffff;
+        border: 1px solid #e0e4ea;
         border-radius: 12px;
         padding: 20px;
         margin-bottom: 16px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.05);
     }
 
     /* Tag labels */
@@ -139,14 +147,14 @@ st.markdown("""
         font-family: 'Space Mono', monospace;
         letter-spacing: 0.03em;
     }
-    .tag-climate  { background: rgba(63,185,80,.15);  color: #3fb950; border: 1px solid rgba(63,185,80,.3); }
-    .tag-policy   { background: rgba(255,166,0,.15);  color: #ffa600; border: 1px solid rgba(255,166,0,.3); }
-    .tag-price    { background: rgba(248,81,73,.15);  color: #f85149; border: 1px solid rgba(248,81,73,.3); }
-    .tag-production{ background: rgba(88,166,255,.15); color: #58a6ff; border: 1px solid rgba(88,166,255,.3);}
+    .tag-climate   { background: rgba(22,163,74,.12);  color: #16a34a; border: 1px solid rgba(22,163,74,.3); }
+    .tag-policy    { background: rgba(217,119,6,.12);  color: #d97706; border: 1px solid rgba(217,119,6,.3); }
+    .tag-price     { background: rgba(220,38,38,.12);  color: #dc2626; border: 1px solid rgba(220,38,38,.3); }
+    .tag-production{ background: rgba(26,111,191,.12); color: #1a6fbf; border: 1px solid rgba(26,111,191,.3);}
 
     /* Best result badge */
     .best-badge {
-        background: linear-gradient(90deg, #f78166, #ff6e40);
+        background: linear-gradient(90deg, #dc2626, #ea580c);
         color: white;
         padding: 2px 10px;
         border-radius: 20px;
@@ -162,28 +170,28 @@ st.markdown("""
     }
 
     /* Divider */
-    hr { border-color: #21262d; }
+    hr { border-color: #e0e4ea; }
 
     /* Tabs */
     .stTabs [data-baseweb="tab-list"] {
-        background: #161b22;
+        background: #f0f4f8;
         border-radius: 10px;
-        border: 1px solid #30363d;
+        border: 1px solid #e0e4ea;
         gap: 0;
     }
     .stTabs [data-baseweb="tab"] {
-        color: #8b949e;
+        color: #6b7280;
         font-weight: 600;
         font-size: 0.85rem;
     }
     .stTabs [aria-selected="true"] {
-        background: #21262d !important;
-        color: #e6edf3 !important;
+        background: #ffffff !important;
+        color: #1e3a5f !important;
         border-radius: 8px;
     }
 
     /* Selectbox */
-    .stSelectbox label { color: #8b949e; font-size: 0.8rem; }
+    .stSelectbox label { color: #6b7280; font-size: 0.8rem; }
 
     /* Info boxes */
     .info-row {
@@ -193,15 +201,15 @@ st.markdown("""
         margin-bottom: 12px;
     }
     .info-chip {
-        background: #21262d;
-        border: 1px solid #30363d;
-        color: #c9d1d9;
+        background: #f0f4f8;
+        border: 1px solid #e0e4ea;
+        color: #374151;
         padding: 6px 14px;
         border-radius: 8px;
         font-size: 0.82rem;
     }
     .info-chip span {
-        color: #58a6ff;
+        color: #1a6fbf;
         font-weight: 700;
         font-family: 'Space Mono', monospace;
     }
@@ -331,11 +339,11 @@ tab1, tab2, tab3, tab4 = st.tabs(["📊 Hasil Eksperimen", "📂 Dataset & EDA",
 PLOTLY_THEME = dict(
     paper_bgcolor="rgba(0,0,0,0)",
     plot_bgcolor="rgba(0,0,0,0)",
-    font_color="#c9d1d9",
+    font_color="#374151",
     font_family="Plus Jakarta Sans",
-    title_font_color="#e6edf3",
-    legend_bgcolor="rgba(22,27,34,0.8)",
-    legend_bordercolor="#30363d",
+    title_font_color="#1e3a5f",
+    legend_bgcolor="rgba(255,255,255,0.9)",
+    legend_bordercolor="#e0e4ea",
     legend_borderwidth=1,
 )
 
@@ -364,10 +372,10 @@ with tab1:
             **PLOTLY_THEME,
             height=320,
             margin=dict(t=20, b=80, l=10, r=10),
-            xaxis=dict(tickangle=-30, gridcolor="#21262d", tickfont=dict(size=10)),
+            xaxis=dict(tickangle=-30, gridcolor="#e5e7eb", tickfont=dict(size=10)),
             yaxis=dict(
                 range=[0.78, 0.88],
-                gridcolor="#21262d",
+                gridcolor="#e5e7eb",
                 tickformat=".3f",
                 tickfont=dict(family="Space Mono", size=10),
             ),
@@ -406,9 +414,9 @@ with tab1:
                 radialaxis=dict(
                     visible=True, range=[0.79, 0.87],
                     tickformat=".2f", tickfont=dict(size=9, family="Space Mono"),
-                    gridcolor="#30363d", linecolor="#30363d",
+                    gridcolor="#e5e7eb", linecolor="#e5e7eb",
                 ),
-                angularaxis=dict(gridcolor="#30363d", linecolor="#30363d"),
+                angularaxis=dict(gridcolor="#e5e7eb", linecolor="#e5e7eb"),
             ),
             legend=dict(orientation="h", yanchor="bottom", y=-0.15, xanchor="center", x=0.5),
         )
@@ -422,18 +430,15 @@ with tab1:
         df_display[col] = df_display[col].apply(lambda x: f"{x:.4f}")
     df_display["Best"] = df_display["Best"].apply(lambda x: "★ TERBAIK" if x else "")
     st.dataframe(
-        df_display.style.apply(
-            lambda row: ["background: rgba(248,81,73,0.1); color: #f85149" if row["Best"] == "★ TERBAIK" else "" for _ in row],
-            axis=1,
-        ),
+        df_display,
         use_container_width=True,
         hide_index=True,
     )
 
     st.markdown("""
     <div class="card" style="margin-top:16px;">
-        <p style="margin:0 0 8px 0; font-weight:700; color:#e6edf3;">💡 Kesimpulan Eksperimen</p>
-        <p style="margin:0; color:#8b949e; font-size:0.88rem; line-height:1.7;">
+        <p style="margin:0 0 8px 0; font-weight:700; color:#1e3a5f;">💡 Kesimpulan Eksperimen</p>
+        <p style="margin:0; color:#6b7280; font-size:0.88rem; line-height:1.7;">
             Kombinasi <strong style="color:#f85149">TF-IDF + Naive Bayes</strong> menghasilkan performa terbaik
             dengan F1-Score <strong style="color:#f85149; font-family:'Space Mono',monospace;">0.8587</strong> dan
             Accuracy <strong style="color:#f85149; font-family:'Space Mono',monospace;">0.8590</strong>.
@@ -553,8 +558,8 @@ with tab3:
             <div class="card" style="border-left: 3px solid {step_colors[i]}; min-height:100px;">
                 <p style="margin:0 0 6px 0; font-weight:700; color:{step_colors[i]}; font-size:0.82rem;
                    font-family:'Space Mono',monospace; letter-spacing:0.04em;">STEP {i+1}</p>
-                <p style="margin:0 0 6px 0; font-weight:700; color:#e6edf3;">{step}</p>
-                <p style="margin:0; color:#8b949e; font-size:0.83rem; line-height:1.6;">{desc}</p>
+                <p style="margin:0 0 6px 0; font-weight:700; color:#1e3a5f;">{step}</p>
+                <p style="margin:0; color:#6b7280; font-size:0.83rem; line-height:1.6;">{desc}</p>
             </div>
             """, unsafe_allow_html=True)
 
@@ -576,18 +581,18 @@ with tab3:
         c1, c2 = st.columns(2)
         with c1:
             st.markdown(f"""
-            <div style="background:#1c2128;border:1px solid #f85149;border-radius:10px;padding:14px;margin-bottom:10px;">
+            <div style="background:#fff8f8;border:1px solid #f85149;border-radius:10px;padding:14px;margin-bottom:10px;">
                 <p style="margin:0 0 6px 0;color:#f85149;font-size:0.75rem;font-weight:700;
                    font-family:'Space Mono',monospace;">SEBELUM · {step}</p>
-                <p style="margin:0;color:#c9d1d9;font-size:0.82rem;line-height:1.6;word-break:break-word;">{before}</p>
+                <p style="margin:0;color:#374151;font-size:0.82rem;line-height:1.6;word-break:break-word;">{before}</p>
             </div>
             """, unsafe_allow_html=True)
         with c2:
             st.markdown(f"""
-            <div style="background:#1c2128;border:1px solid #3fb950;border-radius:10px;padding:14px;margin-bottom:10px;">
+            <div style="background:#fff8f8;border:1px solid #3fb950;border-radius:10px;padding:14px;margin-bottom:10px;">
                 <p style="margin:0 0 6px 0;color:#3fb950;font-size:0.75rem;font-weight:700;
                    font-family:'Space Mono',monospace;">SESUDAH · {step}</p>
-                <p style="margin:0;color:#c9d1d9;font-size:0.82rem;line-height:1.6;word-break:break-word;">{after}</p>
+                <p style="margin:0;color:#374151;font-size:0.82rem;line-height:1.6;word-break:break-word;">{after}</p>
             </div>
             """, unsafe_allow_html=True)
 
@@ -602,7 +607,7 @@ with tab3:
         col.markdown(f"""
         <div class="card" style="border-top: 3px solid {color}; text-align:center;">
             <p style="font-weight:800; color:{color}; margin:0 0 8px 0;">{name}</p>
-            <p style="color:#8b949e; font-size:0.83rem; margin:0; line-height:1.6;">{desc}</p>
+            <p style="color:#6b7280; font-size:0.83rem; margin:0; line-height:1.6;">{desc}</p>
         </div>
         """, unsafe_allow_html=True)
 
@@ -634,8 +639,8 @@ with tab4:
         height=340,
         barmode="group",
         margin=dict(t=20, b=20, l=10, r=10),
-        xaxis=dict(gridcolor="#21262d"),
-        yaxis=dict(range=[0.81, 0.86], gridcolor="#21262d", tickformat=".3f",
+        xaxis=dict(gridcolor="#e5e7eb"),
+        yaxis=dict(range=[0.81, 0.86], gridcolor="#e5e7eb", tickformat=".3f",
                    tickfont=dict(family="Space Mono", size=10)),
         legend=dict(orientation="h", y=1.1, x=0.5, xanchor="center"),
     )
@@ -666,9 +671,9 @@ with tab4:
             title=dict(text=f"Rata-rata {metric}", font_size=13),
             height=180,
             margin=dict(t=40, b=10, l=10, r=10),
-            xaxis=dict(range=[0.80, 0.87], gridcolor="#21262d",
+            xaxis=dict(range=[0.80, 0.87], gridcolor="#e5e7eb",
                        tickformat=".3f", tickfont=dict(family="Space Mono", size=9)),
-            yaxis=dict(gridcolor="#21262d"),
+            yaxis=dict(gridcolor="#e5e7eb"),
             showlegend=False,
         )
         col.plotly_chart(fig_h, use_container_width=True)
@@ -677,17 +682,20 @@ with tab4:
     st.markdown('<p class="section-title">📋 Rangkuman Akhir</p>', unsafe_allow_html=True)
 
     summary_data = {
-        "Kombinasi":  ["BoW + DT", "BoW + NB", "N-Gram + DT", "N-Gram + NB", "TF-IDF + DT", "TF-IDF + NB ★"],
+        "Kombinasi":  ["BoW + Decision Tree", "BoW + Naive Bayes", "N-Gram + Decision Tree", "N-Gram + Naive Bayes", "TF-IDF + Decision Tree", "TF-IDF + Naive Bayes ★"],
         "Accuracy":   ["0.8201", "0.8302", "0.8232", "0.8341", "0.8185", "0.8590"],
         "F1-Score":   ["0.8113", "0.8337", "0.8146", "0.8382", "0.8080", "0.8587"],
-        "Ranking":    ["#5", "#3", "#4", "#2", "#6", "#1"],
+        "Ranking":    ["#5", "#3", "#4", "#2", "#6", "#1 🏆"],
     }
     summary_df = pd.DataFrame(summary_data)
     st.dataframe(
-        summary_df.style.apply(
-            lambda row: ["background:rgba(248,81,73,0.12); color:#f85149" if "★" in row["Kombinasi"] else "" for _ in row],
-            axis=1,
-        ),
+        summary_df,
         use_container_width=True,
         hide_index=True,
+        column_config={
+            "Kombinasi": st.column_config.TextColumn("Kombinasi", width="large"),
+            "Accuracy":  st.column_config.TextColumn("Accuracy"),
+            "F1-Score":  st.column_config.TextColumn("F1-Score"),
+            "Ranking":   st.column_config.TextColumn("Ranking"),
+        },
     )
